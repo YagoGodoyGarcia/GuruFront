@@ -13,10 +13,10 @@ const GroomingFooter = () => {
     <footer className={classNames("grooming-footer", {"jira-sidebar-expanded": jiraSidebarExpanded})}>
       <div className="grooming-footer__content">
         <div className="grooming-footer__content-copyright">
-          © 2023 - {currentDate} GuruBu
+          © 2025 - {currentDate} GuruBu
         </div>
         <a
-          href="https://github.com/Trendyol/gurubu"
+          href="https://github.com/YagoGodoyGarcia/GuruFront"
           target="_blank"
           className="grooming-footer__content-socials-container"
         >
