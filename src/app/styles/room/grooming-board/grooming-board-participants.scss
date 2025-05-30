@@ -1,0 +1,220 @@
+.grooming-board-participants {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+  position: relative;
+  @media (max-width: 850px) {
+    display: none;
+  }
+  li {
+    width: 100%;
+    border-top: 1px solid $gray-100;
+    border-radius: $radius-small;
+    gap: 16px;
+    display: flex;
+    align-items: center;
+    &:last-child {
+      &.vote-above-average,
+      &.vote-below-average,
+      &.on-average,
+      &.no-vote {
+        border-bottom: 1px solid transparent;
+        margin-bottom: 16px;
+      }
+    }
+    &.vote-above-average,
+    &.vote-below-average,
+    &.on-average,
+    &.no-vote {
+      margin-bottom: 8px;
+    }
+    &.vote-above-average {
+      border-top: 1px solid transparent;
+      background-color: $primary-50;
+      color: $primary-700;
+      border-top: 1px solid transparent;
+      font-weight: 600;
+    }
+    &.vote-below-average {
+      font-weight: 600;
+      border-top: 1px solid transparent;
+      background-color: #e8f5ff;
+      color: #0085ff;
+    }
+    &.on-average {
+      background-color: #fefbe8;
+      color: #a15c07;
+      font-weight: 600;
+      border: none;
+      border-top: 1px solid transparent;
+    }
+    &.no-vote {
+      background-color: $gray-100;
+      color: $gray-500;
+    }
+    label {
+      font-size: $font-size-paragraph-4;
+      line-height: $line-height-paragraph-4;
+      font-weight: $regular;
+      max-width: 100px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+  &.story-point-mode{
+    li{
+      label{
+        max-width: 140px;
+      }
+    }
+    .grooming-board-participants__nickname-container{
+      min-width: auto;
+    }
+  }
+  &__nickname-container {
+    display: flex;
+    min-width: 140px;
+    padding: 10px 0 10px 14px;
+    align-items: center;
+    gap: 0 $space-medium;
+    .icon-star-filled {
+      min-width: 16px;
+      min-height: 16px;
+      color: #fac515;
+    }
+    .icon-wifi-off {
+      color: #f04438;
+    }
+    gap: 0 8px;
+  }
+  &__nickname {
+    &.connection-lost {
+      color: red;
+    }
+  }
+  &__icon-plug {
+    color: red;
+  }
+  &__icon-crown {
+    color: $yellow-500;
+  }
+  &__point-cards-container {
+    display: flex;
+    gap: 0 $space-large;
+    width: 100%;
+    justify-content: space-around;
+  }
+  &__point-card {
+    border-radius: 50%;
+    font-size: $font-size-paragraph-4;
+    line-height: $line-height-paragraph-4;
+    font-weight: $regular;
+    text-align: right;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background: $white;
+    border: 1px solid $gray-100;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__metric-voted {
+    background-color: #85e13a;
+    border: 1px solid #4ca30d;
+  }
+  &__all-metrics-voted {
+    background-color: $primary-600;
+    border: 1px solid $primary-600;
+    width: 20px;
+    height: 20px;
+  }
+  &__check-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+  }
+}
+
+.grooming-board-participants__point-card.show {
+  display: none;
+}
+
+.admin-avatar {
+  border: 2px solid #fac515;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.disconnected-avatar {
+  border: 2px solid #f04438;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  img {
+    border-radius: 50%;
+    min-width: 32px;
+    min-height: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+}
+
+.consensus-banner {
+  background: linear-gradient(135deg, #fac515 0%, #85e13a 100%);
+  padding: 12px 16px;
+  border-radius: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  animation: bannerPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-bottom: 16px;
+
+  span {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    &::before,
+    &::after {
+      content: "🎉";
+      animation: bounce 1s ease infinite;
+    }
+  }
+}
+
+@keyframes bannerPop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}

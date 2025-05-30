@@ -1,0 +1,41 @@
+.jira-sidebar-content {
+  padding: 28px 0;
+  &.expanded {
+    padding: 28px 24px;
+    .jira-sidebar-icon-container {
+      margin: 0;
+    }
+  }
+  .jira-sidebar-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E8F5FF;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    cursor: pointer;
+    .jira-sidebar-icon {
+      color: #0055d6;
+    }
+  }
+  .jira-sidebar-shortened-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    .jira-sidebar-shortened-text {
+      color: #0055d6;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 4px;
+    }
+  }
+  .jira-sidebar-vote-text{
+    font-size: 14px;
+    margin-bottom: 4px;
+    color: #a15c07;
+  }
+}

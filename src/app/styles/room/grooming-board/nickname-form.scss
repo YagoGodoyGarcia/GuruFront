@@ -1,0 +1,185 @@
+.nickname-form {
+  width: 384px;
+  padding: $space-xlarge $space-xlarge;
+  max-width: 90%;
+  border-radius: $radius-large;
+  box-shadow: 0px 20px 24px -4px #10182814;
+  background-color: $white;
+  margin: auto;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $space-xsmall;
+    font-family: var(--font-space-grotesk);
+    color: $black;
+    font-size: $font-size-header-5;
+    font-weight: $bold;
+    margin-bottom: $space-xlarge;
+    font-weight: $bold;
+    background: linear-gradient(135deg, $purple-700 0%, $blue-500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: pulse-text 3s infinite alternate;
+    margin: 0;
+    will-change: filter;
+    
+    @keyframes pulse-text {
+      0% {
+        filter: brightness(1) drop-shadow(0 0 5px rgba($purple-500, 0.3));
+      }
+      100% {
+        filter: brightness(1.2) drop-shadow(0 0 8px rgba($purple-500, 0.5));
+      }
+    }
+  }
+  &__title {
+    color: $title-color;
+    font-size: $font-size-paragraph-2;
+    line-height: $line-height-header-4;
+    font-weight: $semibold;
+  }
+  &__input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__divider {
+    display: flex;
+    align-items: center;
+
+    &::before,
+    &::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background-color: $gray-200;
+    }
+  }
+
+  &__label-enter-room {
+    color: #475467;
+    font-weight: $light;
+    font-size: $font-size-paragraph-3;
+    line-height: $line-height-paragraph-3;
+    flex-shrink: 0;
+    margin: 0 $space-small;
+  }
+  &__label-select-grooming {
+    color: #475467;
+    font-weight: 500;
+    font-size: $font-size-paragraph-4;
+    flex-shrink: 0;
+    margin: 0 $space-small;
+    line-height: 20px;
+  }
+  &__input {
+    padding: $space-small $space-large;
+    margin: $space-base 0;
+    border: 1px solid $gray-100;
+    border-radius: $radius-small;
+    font-size: $font-size-paragraph-4;
+    line-height: $line-height-paragraph-4;
+    font-weight: $regular;
+    width: 100%;
+  }
+  &__input:focus {
+    outline: none;
+  }
+  &__grooming-options {
+    margin-top: $space-xlarge;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: $radius-medium;
+    border: 1px solid $gray-300;
+    position: relative;
+
+    &.divider::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: $gray-300;
+    }
+  }
+  &__grooming-option {
+    border: 1px solid transparent;
+    flex: 1;
+    background-color: $white;
+    padding: 10px $space-large;
+    align-items: center;
+    justify-content: space-between;
+    font-size: $font-size-paragraph-4;
+    line-height: $line-height-paragraph-4;
+    font-weight: $medium;
+    cursor: pointer;
+    position: relative;
+
+    p {
+      font-weight: $semibold;
+    }
+
+    &:hover {
+      background-color: #f9fafb;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &.selected {
+      background-color: #7f56d9;
+
+      p {
+        color: $white;
+      }
+    }
+  }
+  &__grooming-option:hover {
+    cursor: pointer;
+  }
+  &__error-message {
+    margin-top: $space-large;
+    font-size: $font-size-paragraph-4;
+    line-height: $line-height-paragraph-4;
+    font-weight: $regular;
+    color: $red-700;
+  }
+  &__button {
+    display: inline-block;
+    margin-top: $space-base;
+    padding: $space-small;
+    color: $white;
+    background-color: #7656cc;
+    font-size: $font-size-paragraph-2;
+    line-height: $line-height-paragraph-2;
+    font-weight: $medium;
+    border-radius: $radius-large;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-family: var(--font-inter);
+  }
+
+  &__info-message {
+    margin-top: $space-large;
+    font-size: $font-size-paragraph-4;
+    line-height: $line-height-paragraph-4;
+    font-weight: $semibold;
+    color: $gray-800;
+  }
+  .vercel-info{
+    margin-top: 12px;
+    background-color: $primary-200;
+    border-radius: 8px;
+    color: $primary-700;
+    font-weight: 600;
+    padding: 4px;
+    a {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+@import "./HomePage.scss";
+@import "./ProjectCard.scss";
+@import "./PlanningPokerCard.scss";
+@import "./SprintPlannerCard.scss";
+@import "./IconContainer.scss";
+@import "./FloatingStats.scss";
+@import "./AnimatedBackground.scss";
+@import "./Footer.scss";
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

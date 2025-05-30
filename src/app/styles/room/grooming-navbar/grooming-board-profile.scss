@@ -1,0 +1,321 @@
+.grooming-board-profile {
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 $space-semi-small;
+  gap: 0 $space-semi-small;
+  cursor: pointer;
+  position: relative;
+  position: relative;
+  cursor: pointer;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 8px;
+    border-radius: $radius-large;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: $gray-50;
+      border-color: $gray-200;
+    }
+  }
+
+  &__tooltip {
+    position: absolute;
+    bottom: -70px;
+    right: 0;
+    background: #ffffff;
+    color: $gray-900;
+    padding: 8px 12px;
+    border: 2px solid $gray-900;
+    border-radius: $radius-medium;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    animation: fadeIn 0.3s ease;
+    z-index: 100;
+    pointer-events: none;
+    width: 300px;
+
+    &-close {
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      border-radius: $radius-small;
+      transition: all 0.2s ease;
+      margin-left: 4px;
+      pointer-events: all;
+
+      &:hover {
+        color: $gray-900;
+        background: $gray-100;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -9px;
+      right: 20px;
+      width: 0;
+      height: 0;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 9px solid $gray-900;
+    }
+
+    svg {
+      flex-shrink: 0;
+      color: $primary-700;
+    }
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $primary-200;
+    border-radius: 100%;
+    color: $primary-600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  &__nickname {
+    font-size: $font-size-paragraph-4;
+    color: $gray-700;
+    font-weight: $medium;
+  }
+
+  &__p-logo-container {
+    position: relative;
+    .p-logo-exclamation {
+      position: absolute;
+      top: -5px;
+      left: 10px;
+      color: $red-700;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+    }
+    .p-logo-check {
+      position: absolute;
+      top: -5px;
+      left: 10px;
+      color: $success-500;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &__p-logo {
+    font-size: 8px;
+    width: 2em;
+    height: auto;
+    vertical-align: middle;
+  }
+
+  &__chevron {
+    color: $gray-400;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover &__chevron {
+    color: $gray-600;
+  }
+
+  &[aria-expanded="true"] &__chevron {
+    transform: rotate(180deg);
+  }
+
+  &__bar {
+    top: calc(100% + 4px);
+    right: 0;
+    position: absolute;
+    background: $white;
+    min-width: 180px;
+    border: 1px solid $gray-200;
+    border-radius: $radius-large;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 90;
+    box-shadow: $shadow-sm;
+  }
+
+  .theme-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    &__option {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      width: 100%;
+      padding: 8px 12px;
+      border: none;
+      border-radius: $radius-medium;
+      background: transparent;
+      color: $gray-500-v2;
+      font-weight: $semibold;
+      font-size: $font-size-paragraph-4;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: left;
+
+      &:hover {
+        background-color: $white;
+        color: $gray-700;
+        box-shadow: $shadow-sm;
+      }
+
+      &.active {
+        background-color: $primary-50;
+        color: $primary-700;
+      }
+    }
+  }
+
+  &__theme-section {
+    padding: 4px;
+    border-top: 1px solid $v2-gray-100;
+    border-bottom: 1px solid $v2-gray-100;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $primary-200;
+    border-radius: 100%;
+    color: $primary-600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  &__text {
+    font-size: $font-size-paragraph-4;
+    color: $purple-600;
+  }
+
+  &__update-nickname-button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: $radius-medium;
+    cursor: pointer;
+    font-weight: $semibold;
+    font-size: $font-size-paragraph-4;
+    color: $gray-500-v2;
+    background: $gray-50-v2;
+    transition: all 0.2s;
+    text-align: left;
+  }
+
+  &__p-sync-button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: $radius-medium;
+    cursor: pointer;
+    font-weight: $semibold;
+    font-size: $font-size-paragraph-4;
+    color: $gray-500-v2;
+    background: $gray-50-v2;
+    transition: all 0.2s;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    .p-sync-new {
+      background-color: $red-600;
+      font-size: $font-size-paragraph-5;
+      font-weight: $semibold;
+      color: $white;
+      border-radius: 4px;
+      padding: 2px 4px;
+    }
+
+    &:hover {
+      background-color: $white;
+      color: $gray-700;
+      box-shadow: $shadow-sm;
+    }
+  }
+  
+
+  &__update-avatar-button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: $radius-medium;
+    cursor: pointer;
+    font-weight: $semibold;
+    font-size: $font-size-paragraph-4;
+    color: $gray-500-v2;
+    background: $gray-50-v2;
+    transition: all 0.2s;
+    text-align: left;
+    width: 100%;
+
+    &:hover {
+      background-color: $white;
+      color: $gray-700;
+      box-shadow: $shadow-sm;
+    }
+  }
+
+  &__leave-room-button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: $radius-medium;
+    cursor: pointer;
+    font-weight: $semibold;
+    font-size: $font-size-paragraph-4;
+    color: $gray-500-v2;
+    background: $gray-50-v2;
+    transition: all 0.2s;
+    text-align: left;
+  }
+
+  &__update-nickname-button:hover {
+    background-color: $white;
+    color: $gray-700;
+    box-shadow: $shadow-sm;
+  }
+
+  &__leave-room-button:hover {
+    background-color: #fff4ed;
+    color: $orange-dark;
+    box-shadow: $shadow-sm;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
