@@ -7,8 +7,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
-  title: "Gurubu | Simple, fast and practical grooming",
-  description: "Simple, fast and practical grooming.",
+  title: "DMK3 | simples, rápida e prático",
+  description: "Simples, rápida e prático.",
 };
 
 export default function RootLayout({
@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.svg" type="image/x-icon" sizes="7x10" />
+        <link rel="icon" href="/image.png" type="image/x-icon" sizes="7x10" />
         <Script
           id="clarity-script"
           type="text/javascript"

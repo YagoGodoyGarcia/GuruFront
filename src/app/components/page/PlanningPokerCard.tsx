@@ -13,8 +13,8 @@ export default function PlanningPokerCard() {
     <ProjectCard
       icon={planningPokerIcon}
       title="Planning Poker"
-      description="Estimate user stories with your team. Make your estimation process more fun and efficient with Planning Poker. Experience real-time voting and instant results."
-      buttonText="Start Estimating"
+      description="Torne o processo de estimativas mais colaborativo, leve e produtivo. Utilize votações em tempo real e visualize os resultados de forma imediata."
+      buttonText="Iniciar Sala"
       buttonLink="/create/room"
       bgColor="purple"
     />

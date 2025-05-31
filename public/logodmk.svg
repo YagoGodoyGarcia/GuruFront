@@ -1,0 +1,14 @@
+<svg width="200" height="100" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="300" fill="#00488C"/>
+  <text x="60" y="190" font-family="Arial, sans-serif" font-weight="bold" font-size="120" fill="#FFFFFF">DM</text>
+  <text x="270" y="190" font-family="Arial, sans-serif" font-weight="bold" font-size="120" fill="#F7941D">K</text>
+  <text x="270" y="190" font-family="Arial, sans-serif" font-weight="bold" font-size="120" fill="#F26522" clip-path="url(#halfClip)">K</text>
+  <text x="380" y="190" font-family="Arial, sans-serif" font-weight="bold" font-size="120" fill="#FFFFFF">3</text>
+  <text x="240" y="240" font-family="Arial, sans-serif" font-size="32" fill="#FFFFFF" letter-spacing="4">TECNOLOGIA</text>
+
+  <defs>
+    <clipPath id="halfClip">
+      <rect x="270" y="70" width="30" height="120"/>
+    </clipPath>
+  </defs>
+</svg>

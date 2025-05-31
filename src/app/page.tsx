@@ -9,28 +9,26 @@ import AnnouncementBanner from "./components/common/announcement-banner";
 export default function Home() {
   return (
     <>
-      <AnnouncementBanner />
+      {/**<AnnouncementBanner /> */}
       <main className="home-container">
         <div className="home-header">
           <div className="logo-container">
             <Image
-              src="/logo.svg"
-              alt="GuruBu Logo"
-              width={100}
-              height={100}
+              src="/image.png"
+              alt="DMK3 Logo"
+              width={430}
+              height={200}
               className="logo-animation"
             />
-            <h2 className="logo-text">GuruBu</h2>
           </div>
-          <h1 className="home-title">Simple, fast and practical</h1>
-          <p className="home-subtitle">Innovative solutions for modern teams</p>
+          <h1 className="home-title">Simples, rápido e prático.</h1>
+          <p className="home-subtitle">Soluções inovadoras para equipes modernas.</p>
         </div>
-
         <div className="projects-grid">
           <PlanningPokerCard />
           <SprintPlannerCard />
         </div>
-        <Footer />
+        {/**<Footer /> */}
       </main>
     </>
   );

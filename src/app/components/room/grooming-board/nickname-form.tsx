@@ -95,12 +95,12 @@ const NicknameForm = ({ roomId }: IProps) => {
 
   const connectionButtonText = () => {
     if (loading && roomId) {
-      return "Joining Room...";
+      return "Entrando na Sala...";
     }
     if (loading && !roomId) {
-      return "Creating Room...";
+      return "Criando Sala...";
     }
-    return roomId ? "Join Room" : "Create Room";
+    return roomId ? "Entrar na Sala" : "Criar Sala";
   };
 
   useEffect(() => {
@@ -130,23 +130,22 @@ const NicknameForm = ({ roomId }: IProps) => {
   return (
     <div className="nickname-form">
       <h1 className="nickname-form__header">
-        <Image priority src="/logo.svg" alt="logo" width={30} height={30} />
-        GuruBu
+        <Image priority src="/image.png" alt="logo" width={300} height={180} />
       </h1>
-      <h1 className="nickname-form__title">Welcome to GuruBu Planning Poker</h1>
+      <h1 className="nickname-form__title">Bem-vindo ao DMK3 Planning Poker</h1>
       <div className="nickname-form__action-wrapper">
         <div className="nickname-form__input-wrapper">
           <label
             htmlFor="nickname-input"
             className="nickname-form__label-enter-room"
           >
-            To enter the room, choose a nickname.
+            Para entrar na sala, escolha um apelido.
           </label>
           <input
             id="nickname-input"
             ref={inputRef}
             className="nickname-form__input"
-            placeholder="Enter your nickname"
+            placeholder="Digite seu apelido."
             value={nickname}
             onChange={handleNicknameChange}
           />
@@ -154,7 +153,7 @@ const NicknameForm = ({ roomId }: IProps) => {
         {!roomId && (
           <div className="nickname-form__divider">
             <label className="nickname-form__label-select-grooming">
-              And select a grooming type.
+              E selecione um tipo de sala
             </label>
           </div>
         )}
