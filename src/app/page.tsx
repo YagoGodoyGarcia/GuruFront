@@ -26,7 +26,7 @@ export default function Home() {
         </div>
         <div className="projects-grid">
           <PlanningPokerCard />
-          <SprintPlannerCard />
+          {/** <SprintPlannerCard /> */}
         </div>
         {/**<Footer /> */}
       </main>
