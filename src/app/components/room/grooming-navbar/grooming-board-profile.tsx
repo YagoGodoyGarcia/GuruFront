@@ -187,7 +187,7 @@ const GroomingBoardProfile = ({ roomId }: Props) => {
           isConsentGiven: false,
         });
       }
-    } catch (error) {}
+    } catch (error) { }
   };
 
   useEffect(() => {
@@ -205,8 +205,8 @@ const GroomingBoardProfile = ({ roomId }: Props) => {
           <div className="grooming-board-profile__icon">
             {groomingInfo?.participants?.[userInfo.lobby?.userID]?.profile
               ?.picture &&
-            groomingInfo?.participants?.[userInfo.lobby?.userID]?.profile
-              ?.isSelected ? (
+              groomingInfo?.participants?.[userInfo.lobby?.userID]?.profile
+                ?.isSelected ? (
               <Image
                 src={
                   groomingInfo?.participants?.[userInfo.lobby?.userID]?.profile
@@ -224,7 +224,7 @@ const GroomingBoardProfile = ({ roomId }: Props) => {
             {groomingInfo?.participants?.[userInfo.lobby?.userID]?.profile
               ?.isSelected
               ? groomingInfo?.participants?.[userInfo.lobby?.userID]?.profile
-                  ?.displayName
+                ?.displayName
               : userInfo.nickname}
           </span>
           {process.env.NEXT_PUBLIC_P_ENABLED === "true" && (
@@ -284,13 +284,13 @@ const GroomingBoardProfile = ({ roomId }: Props) => {
               className="grooming-board-profile__update-nickname-button"
               onClick={() => openModal("changeName")}
             >
-              Change name
+              Alterar nome
             </button>
             <button
               className="grooming-board-profile__leave-room-button"
               onClick={() => openModal("leaveRoom")}
             >
-              Leave Room
+              Sair da sala
             </button>
           </div>
         )}

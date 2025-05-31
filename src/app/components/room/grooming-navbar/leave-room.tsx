@@ -52,14 +52,14 @@ export const LeaveRoom = ({ roomId, closeModal }: Props) => {
           alt="Close Leave Room Modal"
         />
       </div>
-      <h4>Leave the room</h4>
+      <h4>Sair da sala</h4>
       <h5>
-        Are you sure you want to leave the room? If you leave the room, you can
-        enter with the same link as long as the session continues.
+        Tem certeza de que deseja sair da sala?
+        Se você sair, poderá entrar novamente usando o mesmo link enquanto a sessão estiver ativa.
       </h5>
       <div className="leave-room__dialog-buttons">
         <button onClick={closeModal}>Cancel</button>
-        <button onClick={handleRemoveUser}>Leave</button>
+        <button onClick={handleRemoveUser}>Sair</button>
       </div>
     </div>
   );

@@ -15,10 +15,10 @@ type Props = {
 const accessoryTypes = [
   { value: "none", label: "None" },
   { value: "kurt", label: "Kurt" },
-  { value: "prescription01", label: "Glasses" },
-  { value: "prescription02", label: "Round Glasses" },
-  { value: "wayfarers", label: "Wayfarers" },
-  { value: "eyepatch", label: "Eyepatch" },
+  { value: "prescription01", label: "Óculos" },
+  { value: "prescription02", label: "Óculos Redondos" },
+  { value: "wayfarers", label: "Wayfarer" },
+  { value: "eyepatch", label: "Tapa-olho" },
 ];
 
 export const ChangeAvatar = ({ closeModal }: Props) => {
@@ -55,10 +55,10 @@ export const ChangeAvatar = ({ closeModal }: Props) => {
     <div className="change-avatar-container">
       <div className="change-avatar-container__header">
         <h2 className="change-avatar-container__header-title">
-          Customize Your Avatar
+          Personalize seu avatar
         </h2>
         <p className="change-avatar-container__header-subtitle">
-          Make it uniquely yours with colors and accessories
+          Deixe-o com a sua cara usando cores e acessórios
         </p>
       </div>
 
@@ -75,7 +75,7 @@ export const ChangeAvatar = ({ closeModal }: Props) => {
         className="change-avatar-container__random-button"
       >
         <IconRefresh size={18} />
-        Change Avatar
+        Alterar avatar 
       </button>
 
       <div className="change-avatar-container__options">
@@ -85,7 +85,7 @@ export const ChangeAvatar = ({ closeModal }: Props) => {
               size={16}
               style={{ verticalAlign: "middle", marginRight: "8px" }}
             />
-            Background Color
+            Cor de fundo
           </label>
           <div className="color-picker-group">
             <div className="color-picker-group__preview">
@@ -122,7 +122,7 @@ export const ChangeAvatar = ({ closeModal }: Props) => {
               size={16}
               style={{ verticalAlign: "middle", marginRight: "8px" }}
             />
-            Avatar Scale
+            Tamanho do avatar
           </label>
           <input
             type="range"
@@ -138,7 +138,7 @@ export const ChangeAvatar = ({ closeModal }: Props) => {
               size={16}
               style={{ verticalAlign: "middle", marginRight: "8px" }}
             />
-            Accessories
+            Acessórios
           </label>
           <select
             value={previewOptions.accessories || "none"}
