@@ -11,13 +11,13 @@ const LogoContent = ({ type }: { type: "planner" | "poker" }) => {
   return (
     <>
       <Image
-        src="/logo.svg"
-        width={30.93}
-        height={29.33}
+        src="/image.png"
+        width={120.93}
+        height={73.33}
         alt="Gurubu Logo"
         priority
       />
-      <span>{type === "planner" ? "GuruBu Planner" : "GuruBu Planning Poker"}</span>
+      <span>{type === "planner" ? "DMK3 Planner" : "Planning Poker"}</span>
     </>
   );
 };

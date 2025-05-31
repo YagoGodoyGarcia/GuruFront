@@ -37,7 +37,7 @@ const ConnectingInfo = ({ roomId }: IProps) => {
 
   return (
     <div className="connecting-info">
-      <p className="connecting-info__message">Connecting to the room...</p>
+      <p className="connecting-info__message">Conectando-se à sala....</p>
     </div>
   );
 };

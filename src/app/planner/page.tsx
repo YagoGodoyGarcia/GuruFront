@@ -18,7 +18,7 @@ export default function GurubuPlanner() {
     <LoaderProvider>
       <ToastProvider>
         <PlannerProvider>
-          <AnnouncementBanner />
+      {/**<AnnouncementBanner /> */}
           <PlannerNavbar />
           <PlannerContentWrapper />
         </PlannerProvider>

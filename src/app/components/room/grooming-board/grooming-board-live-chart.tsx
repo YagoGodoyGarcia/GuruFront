@@ -57,7 +57,7 @@ const GroomingBoardLiveChart = () => {
         },
         itemStyle: {
           color: function(params: any) {
-            const colors = ['#6941c6', '#9f75ff', '#d4b7ff', '#f4ebff', '#7f56d9', '#5925dc', '#4a1fb8'];
+            const colors = ['#6941c6', '#9f75ff', '#d4b7ff', '#f4ebff', '#2D92E8', '#5925dc', '#4a1fb8'];
             return colors[params.dataIndex % colors.length];
           }
         },

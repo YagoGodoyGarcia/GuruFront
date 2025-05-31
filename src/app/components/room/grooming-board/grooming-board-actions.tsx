@@ -42,14 +42,14 @@ const GroomingBoardActions = ({ roomId }: Props) => {
           })}
           onClick={handleShowResultsClick}
         >
-          Show Results
+          Revelar resultado
         </button>
       )}
       <button
         className="grooming-board__reset-votes-button"
         onClick={handleResetVotesClick}
       >
-        Reset Votes
+        Limpar votos
       </button>
     </div>
   );

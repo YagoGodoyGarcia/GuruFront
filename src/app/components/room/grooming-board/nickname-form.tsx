@@ -132,7 +132,7 @@ const NicknameForm = ({ roomId }: IProps) => {
       <h1 className="nickname-form__header">
         <Image priority src="/image.png" alt="logo" width={300} height={180} />
       </h1>
-      <h1 className="nickname-form__title">Bem-vindo ao DMK3 Planning Poker</h1>
+      <h1 className="nickname-form__title">Bem-vindo Planning Poker</h1>
       <div className="nickname-form__action-wrapper">
         <div className="nickname-form__input-wrapper">
           <label

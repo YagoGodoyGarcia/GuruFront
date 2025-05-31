@@ -65,7 +65,7 @@ const GroomingNavbar = ({ showNickNameForm, roomId }: Props) => {
 
   return (
     <>
-      <AnnouncementBanner />
+      {/**<AnnouncementBanner /> */}
       <nav className={classNames("grooming-navbar", { "grooming-navbar--nickname-form": showNickNameForm })}>
         <div className={classNames("grooming-navbar__content", { "jira-sidebar-expanded": jiraSidebarExpanded })}>
           <Logo />

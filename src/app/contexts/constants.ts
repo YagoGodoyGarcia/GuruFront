@@ -2,61 +2,55 @@ import { IntroStep } from "intro.js/src/core/steps";
 
 export const groomingBoardTour = [
   {
-    title: "Hello!",
-    element: null,
-    intro: "Welcome to GuruBu!",
+    "title": "Olá!",
+    "element": null,
+    "intro": "Bem-vindo!"
   },
   {
-    title: "Voting Stick",
-    element: ".grooming-board__voting-sticks",
-    intro:
-      "You can vote easily in this area, when you want to change your vote, just press a different card!",
+    "title": "Cartas de Votação",
+    "element": ".grooming-board__voting-sticks",
+    "intro": "Você pode votar facilmente nesta área. Se quiser mudar seu voto, basta escolher uma carta diferente!"
   },
   {
-    title: "Participant Logs",
-    element: ".grooming-board__logs-section",
-    intro:
-      "In this area, you will be able to see who voted along with you until admin reveals the votes. When admin reveals the votes, the score ranking from high to low and the average score will be revealed.",
-    position: "left",
+    "title": "Registro dos Participantes",
+    "element": ".grooming-board__logs-section",
+    "intro": "Aqui você poderá ver quem votou junto com você até o administrador revelar os votos. Quando os votos forem revelados, será mostrada a classificação do maior para o menor e a média das pontuações.",
+    "position": "left"
   },
   {
-    title: "Jira Table",
-    element: ".grooming-navbar__content-import-jira-issues",
-    intro:
-      "You can easily access the Jira board, to see the details, you can click import jira ( only admins can see the button ).",
-    position: "bottom",
+    "title": "Tabela do Jira",
+    "element": ".grooming-navbar__content-import-jira-issues",
+    "intro": "Você pode acessar facilmente o quadro do Jira. Para ver os detalhes, clique em importar do Jira (apenas administradores veem o botão).",
+    "position": "bottom"
   },
   {
-    title: "Copy Link",
-    element: ".grooming-navbar__content-copy-link",
-    intro:
-      "By clicking this button, you can copy the room link and share it with the people you want to attend the grooming!",
-    position: "bottom",
+    "title": "Copiar Link",
+    "element": ".grooming-navbar__content-copy-link",
+    "intro": "Ao clicar neste botão, você pode copiar o link da sala e compartilhar com as pessoas que deseja que participem do grooming!",
+    "position": "bottom"
   },
   {
-    title: "Timer",
-    element: ".timer-container",
-    intro:
-      "By clicking this button, you can adjust the duration of the topic to be discussed at the grooming!",
-    position: "bottom",
+    "title": "Temporizador",
+    "element": ".timer-container",
+    "intro": "Clique neste botão para ajustar a duração do tópico a ser discutido no grooming!",
+    "position": "bottom"
   },
   {
-    title: "Select Theme",
-    element: ".theme-selector-container",
-    intro: "You can browse our different themes here!",
-    position: "bottom",
+    "title": "Selecionar Tema",
+    "element": ".theme-selector-container",
+    "intro": "Aqui você pode navegar entre nossos diferentes temas!",
+    "position": "bottom"
   },
   {
-    title: "Profile",
-    element: ".grooming-board-profile",
-    intro:
-      "If you want to change your nickname or leave the room, you can visit your profile.",
-    position: "bottom",
+    "title": "Perfil",
+    "element": ".grooming-board-profile",
+    "intro": "Se quiser mudar seu apelido ou sair da sala, visite seu perfil.",
+    "position": "bottom"
   },
   {
-    title: "That's it!",
-    element: ".feedback-content",
-    intro: "If you have any questions or comments, you can always contact us! ",
-    position: "top",
-  },
+    "title": "É isso aí!",
+    "element": ".feedback-content",
+    "intro": "Se tiver dúvidas ou comentários, pode entrar em contato conosco a qualquer momento!",
+    "position": "top"
+  }
 ] as Partial<IntroStep>[];
