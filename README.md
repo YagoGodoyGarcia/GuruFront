@@ -1,3 +1,6 @@
+> ⚠️ Este projeto é baseado no repositório original [Trendyol/gurubu](https://github.com/Trendyol/gurubu), criado pela equipe da Trendyol, sob a licença BSD 3-Clause.
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
